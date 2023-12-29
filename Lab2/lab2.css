@@ -3,7 +3,6 @@
     height: 400px;
     margin: 100px auto 0 auto;
     overflow: hidden;
-    border-radius: 5%;
 }
 .slides {
     display: flex;
@@ -15,8 +14,7 @@ span {
     top: 30%;
     color: #000;
     font-size: 30px;
-    background-color: rgba(255, 255, 255, 0.452);
-    border-radius: 25%;
+    background-color: rgba(44, 23, 23, 0.452);
     padding: 10px;
     display: flex;
     align-items: center;
