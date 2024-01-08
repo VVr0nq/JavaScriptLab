@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+    <link rel="stylesheet" href="lab4.css">
+</head>
+<body>
+    <h2>Add Note</h2>
+    <button id="addButton">AddNote</button>
+    <button id="editButton" style="display: none;">Edit Note</button>
+    <button id="clearAllNotes">Clear All</button>
+    <div id="addNote" style="display: none;">
+        <input placeholder="Title" type="text" id="title"><br>
+        <textarea placeholder="Note" id="content"></textarea><br>
+        <label for="color">Color</label>
+        <input id="color" type="color" value="#555555">
+    </div>
+    <hr>
+    <h3></h3>
+    <div id="pinNoteTab"></div>
+    <hr>
+    <div id="noteTab"></div>
+    <script src="lab4.js"></script>
+</body>
+</html>
