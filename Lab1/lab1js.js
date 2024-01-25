@@ -1,6 +1,6 @@
 const btnPrzelicz = document.querySelector('#przelicz')
 const btnDodaj = document.querySelector('#dodajPole')
-const wynikiPojemnik = document.querySelector('#wyniki')
+const wynikiPojemnik = document.querySelector('#wynik')
 
 btnPrzelicz.addEventListener('click', () => {
     const liczby = document.querySelectorAll('#liczby input[type="text"]')
