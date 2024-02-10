@@ -1,4 +1,4 @@
-const slider = document.querySelector("#slider")
+const slider = document.querySelector(".slider")
 const slides = document.querySelector(".slides")
 const left = document.querySelector(".left")
 const right = document.querySelector(".right")
