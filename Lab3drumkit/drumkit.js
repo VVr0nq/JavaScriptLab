@@ -14,14 +14,14 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
-
+//muzyczka
     recordBtn.addEventListener('click', function () {
         isRecording = !isRecording;
         if (isRecording) {
-            recordedSounds = { kick: [], snare: [], hihat: [] };
+            recordedSounds = { kick: [], snare: [], hihat: [], boom: [], openhat: [],tink: [], ride: [], clap: [], tom: []};
         }
     });
-
+//play
     playBtn.addEventListener('click', function () {
         playRecordedSounds();
     });
