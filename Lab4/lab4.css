@@ -5,6 +5,7 @@
 body{
     background-color: #e9d6d6;
     color: rgb(245, 3, 3);
+    width: 40%;
     
 }
 .notes{
@@ -19,6 +20,7 @@ body{
 input{
     margin: 20px;
     border-radius: 10px;
+    width: 40%;
     
 }
 button{

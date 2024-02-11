@@ -73,7 +73,7 @@ function showNotes(){
     document.querySelector("#noteTab").innerHTML = notez.join(" ")
     selectBox();
 }
-//zwracaelementwdanym
+//zwracaelementwdanymzbiorze
 
 document.querySelector("#addButton").addEventListener("click", () =>{
     if(document.getElementById("addNote").style.display=="none"){
@@ -84,7 +84,7 @@ document.querySelector("#addButton").addEventListener("click", () =>{
     }
     
 });
-
+//wyszukiwanie obiektu
 document.querySelector("#clearAllNotes").addEventListener("click", () =>{
     localStorage.clear()
     showNotes()
