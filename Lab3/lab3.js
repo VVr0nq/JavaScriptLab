@@ -1,20 +1,20 @@
 window.addEventListener('keypress', onKeyPress)
 const SelectChannel = document.querySelectorAll(".inp")
-const metronomBtn = document.querySelector("#metronom")
+const JAzdabtn = document.querySelector("JAzda")
 let record = null
 let intervalId
 let isPlay = true
-
+//grajtutaj
 const KeyToSound = {
-    'a': document.querySelector('#s1'),
-    's': document.querySelector('#s2'),
-    'd': document.querySelector('#s3'),
-    'f': document.querySelector('#s4'),
-    'g': document.querySelector('#s5'),
-    'h': document.querySelector('#s6'),
-    'j': document.querySelector('#s7'),
-    'k': document.querySelector('#s8'),
-    'l': document.querySelector('#s9'),
+    '1': document.querySelector('#s1'),
+    '2': document.querySelector('#s2'),
+    '3': document.querySelector('#s3'),
+    '4': document.querySelector('#s4'),
+    '5': document.querySelector('#s5'),
+    '6': document.querySelector('#s6'),
+    '7': document.querySelector('#s7'),
+    '8': document.querySelector('#s8'),
+    '9': document.querySelector('#s9'),
 }
 
  const Channels ={
@@ -89,26 +89,26 @@ function playSelected(){
 
 const playClick = () =>{document.getElementById("met").play()}
 
-function playMetronom() {
+function playJAzda() {
     if(isPlay){
         const bpmInput = document.getElementById('bpm')
         const bpm = parseInt(bpmInput.value, 10)
         const intervalMs = 60000 / bpm
         intervalId = setInterval(playClick, intervalMs)
-        metronomBtn.textContent = "x"
+        JAzdaBtn.textContent = "x"
         isPlay = false
     }else{
         clearInterval(intervalId)
         isPlay = true
-        metronomBtn.textContent = ">"
+        JAzdaBtn.textContent = ">"
     }
 
 }
 
 document.querySelector("#play-all").addEventListener("click", () => {playRecorded(1),playRecorded(2),playRecorded(3),playRecorded(4)})
 document.querySelector("#play-selected").addEventListener("click", () => {playSelected()})
-metronomBtn.addEventListener("click", () => {playMetronom()})
-document.getElementById('bpm').addEventListener("change",()=>{playMetronom()})
+JAzdaBtn.addEventListener("click", () => {playJAzda()})
+document.getElementById('bpm').addEventListener("change",()=>{playJAzda()})
 
 document.querySelector("#channel1Record").addEventListener("click", () => {recordSound(1)})
 document.querySelector("#channel1Play").addEventListener("click", () => {playRecorded(1)})
