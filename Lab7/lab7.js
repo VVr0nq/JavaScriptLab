@@ -1,6 +1,6 @@
 const apiKey = 'f04651528f76e3eed0d63e6ae4c2982f';
 function getWeather(city) {
-// Update
+// Update pobiera
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
         .then(response => response.json())
         .then(data => {
@@ -12,7 +12,7 @@ function getWeather(city) {
                                       <p>Wilgotność: ${data.main.humidity}%</p>
                                       <p>Conditions: ${data.weather[0].description}</p>
                                       <button onclick="removeCity('${data.name}')">Delete</button>`;
-                weatherList.appendChild(listItem);
+                weatherList.appendChild(listItem);//osatnie dziecko dodaje za lsita
                 addCityToStorage(data.name); 
             } else {
                 alert("City not found.");
@@ -20,6 +20,7 @@ function getWeather(city) {
         })
         .catch(error => console.error("Error: ", error));
 }
+//dodaje
 function addCityToStorage(city) {
     let cities = JSON.parse(localStorage.getItem('cities')) || [];
     if (cities.length < 10) {
@@ -29,6 +30,7 @@ function addCityToStorage(city) {
         alert("You can add only 10 cities");
     }
 }
+//usuwa
 function removeCity(city) {
     let cities = JSON.parse(localStorage.getItem('cities')) || [];
     cities = cities.filter(c => c !== city);
@@ -43,7 +45,7 @@ function loadCities() {
     cities.forEach(city => getWeather(city));
 }
 window.onload = loadCities;
-
+//zwaraca element
 document.getElementById('addCityForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const cityInput = document.getElementById('cityInput');

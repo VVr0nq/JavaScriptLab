@@ -1,7 +1,7 @@
 let maxId=0; 
 let selected = []
 showNotes();
-
+//wyszukiwanieelement
 function addNote(){
     const note = document.querySelector("#addNote")
     const title = note.querySelector("#title") 
@@ -12,7 +12,7 @@ function addNote(){
         if(!isNaN(id)) maxId = id
     })
     const id = maxId + 1
-   
+   //zapisuje dane
     if(title.value == ""){
         alert("Add Title")
     }else{
@@ -73,7 +73,7 @@ function showNotes(){
     document.querySelector("#noteTab").innerHTML = notez.join(" ")
     selectBox();
 }
-
+//zwracaelementwdanym
 
 document.querySelector("#addButton").addEventListener("click", () =>{
     if(document.getElementById("addNote").style.display=="none"){
