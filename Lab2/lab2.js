@@ -28,34 +28,34 @@ function startInterval(){
     intervalRef = setInterval(
             () => {
                 slides.style.transition = "200ms ease-in-out transform"
-                slides.style.transform = `translateX(${-600 * i}px)`
+                slides.style.transform = `translateX(${-400 * i}px)`
                 i++
                 if(i>count.length-1) i = 0;
             },
             3000
         )
 }
-//przepmianatransition
+//przepmianatransitionprzeskakiwanie
 left.addEventListener("click",() =>{
     if(i <= 0) {
         i=count.length+1
-        slides.style.transition = "300ms ease-in-out transform"
-        slides.style.transform = `translateX(${-600 * i}px)`
+        slides.style.transition = "200ms ease-in-out transform"
+        slides.style.transform = `translateX(${-900 * i}px)`
         i--
     }
-    slides.style.transition = "300ms ease-in-out transform"
+    slides.style.transition = "200ms ease-in-out transform"
     i--
-    slides.style.transform = `translateX(${-600 * i}px)`
+    slides.style.transform = `translateX(${-900 * i}px)`
 })
-
+//przeskakiwanie
 right.addEventListener("click",() =>{
     if(i > count.length-2) {
         i= -2
-        slides.style.transition = "300ms ease-in-out transform"
-        slides.style.transform = `translateX(${-600 * i}px)`
+        slides.style.transition = "200ms ease-in-out transform"
+        slides.style.transform = `translateX(${-900 * i}px)`
         i++
     }
-    slides.style.transition = "300ms ease-in-out transform"
+    slides.style.transition = "200ms ease-in-out transform"
     i++
-    slides.style.transform = `translateX(${-600 * i}px)`
+    slides.style.transform = `translateX(${-900 * i}px)`
 })
