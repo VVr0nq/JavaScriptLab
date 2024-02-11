@@ -1,5 +1,4 @@
 const btnPrzelicz = document.querySelector('#przelicz')
-const btnDodaj = document.querySelector('#dodajPole')
 const wynikiPojemnik = document.querySelector('#wyniki')
 
 btnPrzelicz.addEventListener('click', () => {
@@ -22,12 +21,3 @@ btnPrzelicz.addEventListener('click', () => {
     wynikiPojemnik.innerHTML = "Suma: "+ sum + "\nŚrednia: " + average + "\nMin: " + min + "\nMax: "+ max
 })
 
-btnDodaj.addEventListener('click',() =>{
-    const pojemnikPole = document.getElementById('liczby')
-    const nowePole = document.createElement('input')
-    nowePole.type = 'text'
-    pojemnikPole.appendChild(nowePole)
-    nowePole.addEventListener('dblclick', () => {
-        pojemnikPole.removeChild(nowePole)
-    })
-})
