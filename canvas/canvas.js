@@ -29,7 +29,7 @@ function draw() {
     var ball = balls[i];
     ctx.beginPath();
     ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "blue";
     ctx.fill();
     ctx.closePath();
 
