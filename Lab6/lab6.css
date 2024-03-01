@@ -1,0 +1,16 @@
+button {
+    text-align: center;
+    display: block;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  #myCanvas {
+    border: 1px solid black;
+    text-align: center;
+    background-color: blueviolet;
+    border-radius: 20px;
+    
+  }
+
+  
